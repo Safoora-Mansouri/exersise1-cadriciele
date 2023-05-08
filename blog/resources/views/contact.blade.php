@@ -21,10 +21,10 @@
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
                         @isset($data)
-                        <strong>Name : {{ $data->fullname }}</strong>{{ $data->fullname ?? '' }}<br><hr>
-                        <strong>email : {{ $data->email }}</strong>{{ $data->email ?? '' }}<br><hr>
-                        <strong>phone : {{ $data->phone }}</strong>{{ $data->phone ?? '' }}<br><hr>
-                        <strong>message : {{ $data->message }}</strong>{{ $data->message ?? '' }}<br>
+                        <strong>Name : </strong>{{ $data->fullname ?? '' }}<br><hr>
+                        <strong>email : </strong>{{ $data->email ?? '' }}<br><hr>
+                        <strong>phone : </strong>{{ $data->phone ?? '' }}<br><hr>
+                        <strong>message : </strong>{{ $data->message ?? '' }}<br>
                         @else
                         <form method="post">
                             @csrf
